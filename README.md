@@ -10,4 +10,4 @@ Projeto da 8° edição da <a href="https://lp.rocketseat.com.br/nlw-return">Nex
 <br>
 <br>
 
-<img src="./media/ticket.png">
+<!-- <img src="./media/ticket.png"> -->

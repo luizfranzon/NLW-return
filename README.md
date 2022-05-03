@@ -11,6 +11,6 @@ Projeto da 8° edição da <a href="https://lp.rocketseat.com.br/nlw-return">Nex
 <br>
 
 ### Projeto: *DoctorCare*
-<p align="center"><img src="./other-media/project-face.png"></p>
+<p align="center"><img src="./other-media/project.png"></p>
 
 <!-- <img src="./media/ticket.png"> -->

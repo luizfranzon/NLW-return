@@ -16,6 +16,10 @@
     font-size: 62.5%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   width: 100%;
@@ -26,6 +30,8 @@ body {
     font-family: "DM Sans", sans-serif;
     font-size: 1.6rem;
     text-align: center;
+
+    background-color: #F7F9F9;
 }
 
 .wrapper {
@@ -38,13 +44,17 @@ ul {
   list-style: none;
 }
 
-/* -------------------Header------------------- */
+/* -------------------#home------------------- */
 
-header {
-  margin-top: calc(4.1rem + var(--nav-height))
+#home {
+  padding-top: calc(4.1rem + var(--nav-height))
 }
 
-header::before {
+section {
+  padding-block: 10rem;
+}
+
+#home::before {
   content: "";
   width: 100%;
   height: calc(108rem + var(--nav-height));
@@ -57,27 +67,27 @@ header::before {
   z-index: -1;
 }
 
-header h4 {
+#home h4 {
     font-size: 1.4rem;
     color: var(--primary-color);
     margin-bottom: 1.6rem;
 }
 
-header h1 {
+#home h1 {
     margin-bottom: 2.4rem;
     font-size: 3.4rem;
     color: var(--headline);
     line-height: 130%;
 }
 
-header p {
+#home p {
     font-size: 1.8rem;
     line-height: 150%;
     color: var(--paragraph);
     margin-bottom: 3.2rem;
 }
 
-header button {
+#home button {
     background-color: var(--primary-color);
     margin: 0rem auto 6rem auto;
 
@@ -126,7 +136,7 @@ header button {
     line-height: 150%;
 }
 
-header img {
+#home img {
   display: block;
   margin-inline: auto;
   object-position: 0 2rem;
@@ -193,6 +203,9 @@ body.menu-expanded {
   overflow: hidden;
 }
 
+.menu {
+  transform: translateY(-100%);
+}
 
 body.menu-expanded .menu {
   position: fixed;
@@ -204,6 +217,9 @@ body.menu-expanded .menu {
   height: 100vh;
 
   padding-top: var(--nav-height);
+
+  transition: transform 500ms;
+  transform: translateY(0%);
 }
 
 body.menu-expanded nav {
@@ -264,4 +280,44 @@ body.menu-expanded .logo path {
 
 body.menu-expanded button path {
   stroke: white;
+}
+
+/* -------------------Services------------------- */
+
+#services .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+#services header h4 {
+  font-size: 1.4rem;
+  line-height: 150%;
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+
+  color: var(--primary-color);
+
+  margin-bottom: 1.6rem;
+}
+
+#services header h2 {
+  font-size: 3rem;
+  line-height: 3.9rem;
+  text-align: center;
+
+  color: var(--headline);
+  margin-bottom: 6rem;
+}
+
+#services .card {
+  padding: 2.4rem;
+  text-align: left;
+  border: .1rem solid var(--green-light);
+  border-radius: .6rem;
+  background-color: white;
+}
+
+#services .card h3 {
+  margin-block: 1.6rem;
 }
